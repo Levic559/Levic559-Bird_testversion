@@ -42,11 +42,11 @@ const BirdLogo = ({
 }) => {
 const router = useRouter();
 // ()=>router.push( routeTo)
-  return <BirdLogoCont>
+  return <BirdLogoCont onClick={()=>router.push(routeTo)} >
       
     <LogoImg  src ="/bird-logo.svg" width={width}  display={ display}  />
    
-    <LogoImput  fontSize={fontSize} Fontdisplay={Fontdisplay} marginTop={marginTop} right={right}  onClick={()=>router.push(routeTo)} >
+    <LogoImput  fontSize={fontSize} Fontdisplay={Fontdisplay} marginTop={marginTop} right={right}  >
       {text}
     </LogoImput>
 
