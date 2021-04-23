@@ -62,7 +62,7 @@ const Banner = ({
     return <BannerContainer>
         <NavContainer>
             <BackContainer src="/arrow-grey-left.svg" onClick={()=>router.push(routeTo)}/>
-            <BirdLogo
+            <BirdLogo  onClick={()=>router.push(routeTo)} 
                 display="none"
                 fontSize="30"
                 marginTop="0"
